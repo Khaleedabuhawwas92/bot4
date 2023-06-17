@@ -3,9 +3,9 @@ const Binance = require("binance-api-node").default;
 
 // Instantiate the client with your API key and secret
 const client = Binance({
-   apiKey: "4UeTK0TlFInpkmN9DapZuv2lqGmL0xD81to22YVggI3QIJE2bsK9DV2P2g7rKsD9",
+   apiKey: "xmYqKoIWUdT4ieSrSzH4o5YNvJjRvLgA8pF8oj8wMwKVb1DFSeahd7BFWwe9yjvg",
    apiSecret:
-      "Io34B6jhYN3Lzha6WIaig2l8boxp7WmqJ6mwvDA3OAfRKfb7YmulSsfb5II8stMl",
+      "rZTY0b63CLLx7VtIc3iHHelr4Pii1Pn7mXxx1tyhmInJABd97TDZVMBCCq7sPZCM",
 
       recvWindow: 5000, // Set recvWindow parameter
 });
