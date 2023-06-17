@@ -20,7 +20,7 @@ const client = Binance({
 });
 
 const symbol = 'LINAUSDT';
-const timeframe = '4h';
+const timeframe = '1s';
 async function fetchPriceData(symbol, timeframe) {
   try {
     const response = await axios.get(`https://api.binance.com/api/v3/klines`, {
