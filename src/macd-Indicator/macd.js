@@ -15,9 +15,8 @@ const { SellMarket } = require('../Order-Functions/sellByMarket');
 
 // // Configure your Binance API credentials
 const client = Binance({
-   apiKey: "xmYqKoIWUdT4ieSrSzH4o5YNvJjRvLgA8pF8oj8wMwKVb1DFSeahd7BFWwe9yjvg",
-   apiSecret:
-      "rZTY0b63CLLx7VtIc3iHHelr4Pii1Pn7mXxx1tyhmInJABd97TDZVMBCCq7sPZCM",
+  apiKey: 'xmYqKoIWUdT4ieSrSzH4o5YNvJjRvLgA8pF8oj8wMwKVb1DFSeahd7BFWwe9yjvg',
+  apiSecret: 'rZTY0b63CLLx7VtIc3iHHelr4Pii1Pn7mXxx1tyhmInJABd97TDZVMBCCq7sPZCM',
 });
 
 const symbol = 'LINAUSDT';
