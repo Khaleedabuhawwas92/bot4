@@ -7,16 +7,17 @@ const client = Binance({
 
 async function SellMarket(symbol) {
   try {
-    const trades = await client.myTrades({ symbol });
+     const Orders = await client.allOrders({ symbol });
 
-    const lastTrade = trades[trades.length - 1];
-    const qty = (lastTrade.qty - lastTrade.qty * 0.001).toFixed(2);
-    // console.log(lastTrade);
-    console.log(qty);
-
-    SellOrderMarket(symbol, qty);
+     const lastOrder = Orders[Orders.length - 1];
+     const qty =
+        lastOrder.origQty - Math.round(lastOrder.origQty * 0.002).toFixed(2);
+     console.log(lastOrder);
+     console.log(qty);
+     console.log(lastOrder.origQty);
+     SellOrderMarket(symbol, qty);
   } catch (error) {
-    console.error('Error retrieving last order:', error);
+     console.error("Error retrieving last order:", error);
   }
 }
 

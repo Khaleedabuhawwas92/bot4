@@ -225,7 +225,7 @@ async function checkMACDAndTrade() {
     // Fetch the last 100 candles for the symbol
     const candles = await client.candles({
       symbol: symbol,
-      interval: '4h',
+      interval: '1h',
       limit: 100,
     });
 
