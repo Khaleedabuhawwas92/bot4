@@ -6,6 +6,7 @@ const client = Binance({
 });
 
 async function SellMarket(symbol) {
+  
   try {
      const Orders = await client.allOrders({ symbol });
 

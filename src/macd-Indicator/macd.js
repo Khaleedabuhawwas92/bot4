@@ -225,7 +225,7 @@ async function checkMACDAndTrade() {
     // Fetch the last 100 candles for the symbol
     const candles = await client.candles({
       symbol: symbol,
-      interval: '1h',
+      interval: '4h',
       limit: 100,
     });
 
@@ -327,7 +327,7 @@ function isMACDUnderZero(macdOutput) {
 
 const period = { fastPeriod: 12, slowPeriod: 26, signalPeriod: 9 };
 
-const intervalTime = 1000; // Interval time in milliseconds
+const intervalTime = 2500; // Interval time in milliseconds
 setInterval(checkMACDAndTrade, intervalTime);
 // MACDandRSI();
 // testMacd();
